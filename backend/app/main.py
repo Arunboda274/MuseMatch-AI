@@ -5,8 +5,12 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from app.config import settings
 from app.database import engine
-from app.routes import album_router, artist_router, auth_router
-
+from app.routes import (
+    album_router,
+    artist_router,
+    auth_router,
+    genre_router,
+)
 
 app = FastAPI(
     title=f"{settings.app_name} API",
@@ -33,6 +37,7 @@ app.add_middleware(
 app.include_router(auth_router)
 app.include_router(artist_router)
 app.include_router(album_router)
+app.include_router(genre_router)
 
 
 @app.get("/")

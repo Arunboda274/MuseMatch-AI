@@ -11,6 +11,11 @@ from app.schemas.artist import (
     RoleCreate,
     RoleResponse,
 )
+from app.schemas.genre import (
+    GenreCreate,
+    GenreResponse,
+    GenreUpdate,
+)
 from app.schemas.user import (
     LoginResponse,
     TokenResponse,
@@ -26,6 +31,9 @@ __all__ = [
     "ArtistCreate",
     "ArtistResponse",
     "ArtistUpdate",
+    "GenreCreate",
+    "GenreResponse",
+    "GenreUpdate",
     "RoleCreate",
     "RoleResponse",
     "LoginResponse",
