@@ -5,7 +5,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from app.config import settings
 from app.database import engine
-from app.routes import artist_router, auth_router
+from app.routes import album_router, artist_router, auth_router
 
 
 app = FastAPI(
@@ -32,6 +32,7 @@ app.add_middleware(
 # Register API routes
 app.include_router(auth_router)
 app.include_router(artist_router)
+app.include_router(album_router)
 
 
 @app.get("/")

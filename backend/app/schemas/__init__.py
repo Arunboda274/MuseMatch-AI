@@ -1,3 +1,9 @@
+from app.schemas.album import (
+    AlbumArtistResponse,
+    AlbumCreate,
+    AlbumResponse,
+    AlbumUpdate,
+)
 from app.schemas.artist import (
     ArtistCreate,
     ArtistResponse,
@@ -13,6 +19,10 @@ from app.schemas.user import (
 )
 
 __all__ = [
+    "AlbumArtistResponse",
+    "AlbumCreate",
+    "AlbumResponse",
+    "AlbumUpdate",
     "ArtistCreate",
     "ArtistResponse",
     "ArtistUpdate",
