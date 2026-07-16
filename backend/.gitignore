@@ -23,3 +23,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Uploaded media
+backend/media/songs/*
+backend/media/covers/*
+backend/media/temp/*
+
+# Keep empty folders
+!backend/media/songs/.gitkeep
+!backend/media/covers/.gitkeep
+!backend/media/temp/.gitkeep

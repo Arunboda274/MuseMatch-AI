@@ -10,7 +10,9 @@ from app.routes import (
     artist_router,
     auth_router,
     genre_router,
+    song_router,
 )
+
 
 app = FastAPI(
     title=f"{settings.app_name} API",
@@ -38,6 +40,7 @@ app.include_router(auth_router)
 app.include_router(artist_router)
 app.include_router(album_router)
 app.include_router(genre_router)
+app.include_router(song_router)
 
 
 @app.get("/")

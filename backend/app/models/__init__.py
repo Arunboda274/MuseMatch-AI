@@ -4,6 +4,10 @@ from app.models.artist import Artist
 from app.models.artist_role import artist_roles
 from app.models.genre import Genre
 from app.models.role import Role
+from app.models.song import Song, SongStatus
+from app.models.song_artist import song_artists
+from app.models.song_feature import SongFeature
+from app.models.song_genre import song_genres
 from app.models.user import User, UserRole
 
 __all__ = [
@@ -12,8 +16,13 @@ __all__ = [
     "Artist",
     "Genre",
     "Role",
+    "Song",
+    "SongFeature",
+    "SongStatus",
     "User",
     "UserRole",
     "album_artists",
     "artist_roles",
+    "song_artists",
+    "song_genres",
 ]

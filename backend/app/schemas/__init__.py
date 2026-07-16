@@ -11,10 +11,21 @@ from app.schemas.artist import (
     RoleCreate,
     RoleResponse,
 )
+from app.schemas.audio_analysis import AudioAnalysisResponse
 from app.schemas.genre import (
     GenreCreate,
     GenreResponse,
     GenreUpdate,
+)
+from app.schemas.song import (
+    SongAlbumResponse,
+    SongArtistResponse,
+    SongCreate,
+    SongFeatureCreate,
+    SongFeatureResponse,
+    SongGenreResponse,
+    SongResponse,
+    SongUpdate,
 )
 from app.schemas.user import (
     LoginResponse,
@@ -22,6 +33,7 @@ from app.schemas.user import (
     UserCreate,
     UserResponse,
 )
+
 
 __all__ = [
     "AlbumArtistResponse",
@@ -31,12 +43,21 @@ __all__ = [
     "ArtistCreate",
     "ArtistResponse",
     "ArtistUpdate",
+    "AudioAnalysisResponse",
     "GenreCreate",
     "GenreResponse",
     "GenreUpdate",
+    "LoginResponse",
     "RoleCreate",
     "RoleResponse",
-    "LoginResponse",
+    "SongAlbumResponse",
+    "SongArtistResponse",
+    "SongCreate",
+    "SongFeatureCreate",
+    "SongFeatureResponse",
+    "SongGenreResponse",
+    "SongResponse",
+    "SongUpdate",
     "TokenResponse",
     "UserCreate",
     "UserResponse",
