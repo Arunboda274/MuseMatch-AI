@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic-settings
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.3.0
+python-multipart
+email-validator
+pandas
+numpy
+scikit-learn
+librosa
+soundfile
+alembic
